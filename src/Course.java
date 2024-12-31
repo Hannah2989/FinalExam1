@@ -6,7 +6,7 @@ public class Course {
     long courseId;
     String courseName;
     String instructorName;
-    List<Student> studentEnrolled = new ArrayList<>();
+    List<Student> studentEnrolled;
 
     public Course(long courseId, String courseName, String instructorName, List<Student> studentEnrolled) {
         this.courseId = courseId;
@@ -21,6 +21,10 @@ public class Course {
 
     void removeStudent(Student student) {
         studentEnrolled.remove(student);
+    }
+
+    public int studentCount() {
+        return studentEnrolled.size();
     }
 
     void showCourseDetails(){

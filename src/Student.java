@@ -3,11 +3,13 @@ import java.util.List;
 
 public class Student extends Person{
 
-    List<String> enrolledCourses = new ArrayList<>();
+    List<String> enrolledCourses;
 
     public Student(long id, String name,String email, int age, List<String> enrolledCourses) {
+
         super(id, name, email, age);
         this.enrolledCourses = enrolledCourses;
+
     }
 
     @Override

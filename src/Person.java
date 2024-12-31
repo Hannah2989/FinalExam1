@@ -1,8 +1,10 @@
 public abstract class Person {
-
     long id;
+
     String name;
+
     String email;
+
     int age;
 
     public Person(long id, String name, String email, int age) {

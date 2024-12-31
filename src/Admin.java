@@ -1,9 +1,8 @@
-import java.util.ArrayList;
 import java.util.List;
 
 public class Admin extends Person{
 
-    List<String> permissions = new ArrayList<>();
+    List<String> permissions;
 
     public Admin(long id, String name, String email, int age, List<String> permissions) {
         super(id, name, email, age);
